@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_ui_nosologies",
+  "info": {
+    "displayName": "Nosology"
+  },
+  "options": {},
+  "attributes": {
+    "group": {
+      "type": "string",
+      "required": true
+    },
+    "list": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

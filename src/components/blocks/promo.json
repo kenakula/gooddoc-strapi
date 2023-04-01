@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_blocks_promos",
+  "info": {
+    "displayName": "Promo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "titleMobile": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "inputPlaceholder": {
+      "type": "string"
+    },
+    "mobileInputPlaceholder": {
+      "type": "string"
+    },
+    "chips": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.chip"
+    }
+  }
+}

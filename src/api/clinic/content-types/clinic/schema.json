@@ -1,0 +1,98 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clinics",
+  "info": {
+    "singularName": "clinic",
+    "pluralName": "clinics",
+    "displayName": "Clinics",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "displayName": "Address",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.address"
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.social"
+    },
+    "metro": {
+      "displayName": "Metro",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.metro"
+    },
+    "insurances": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::insurance.insurance"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    },
+    "worktime": {
+      "displayName": "Worktime",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.worktime"
+    },
+    "specialties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::specialty.specialty"
+    },
+    "doctors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::doctor.doctor"
+    },
+    "reembolso": {
+      "type": "boolean",
+      "default": false
+    },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "globalServices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::global-service.global-service"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.service-price"
+    },
+    "longText": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "clinics_pages",
+  "info": {
+    "singularName": "clinics-page",
+    "pluralName": "clinics-pages",
+    "displayName": "ClinicsPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "promo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.promo"
+    }
+  }
+}

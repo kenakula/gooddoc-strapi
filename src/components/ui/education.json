@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ui_educations",
+  "info": {
+    "displayName": "Education"
+  },
+  "options": {},
+  "attributes": {
+    "startYear": {
+      "type": "string",
+      "required": true
+    },
+    "endYear": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "required": false
+    },
+    "specialty": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

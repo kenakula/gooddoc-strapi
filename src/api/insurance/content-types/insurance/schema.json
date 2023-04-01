@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insurances",
+  "info": {
+    "singularName": "insurance",
+    "pluralName": "insurances",
+    "displayName": "Insurances",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doctor.doctor",
+      "inversedBy": "insurances"
+    }
+  }
+}

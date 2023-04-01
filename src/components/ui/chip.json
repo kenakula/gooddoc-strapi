@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ui_chips",
+  "info": {
+    "displayName": "Chip"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

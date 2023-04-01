@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Doctors",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "languages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::language.language"
+    },
+    "shortText": {
+      "type": "text"
+    },
+    "longText": {
+      "type": "richtext"
+    },
+    "specialties": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::specialty.specialty",
+      "inversedBy": "doctors"
+    },
+    "nosologies": {
+      "displayName": "Nosology",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.nosology"
+    },
+    "insurances": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::insurance.insurance",
+      "mappedBy": "doctor"
+    },
+    "reembolso": {
+      "type": "boolean",
+      "default": false
+    },
+    "globalServices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::global-service.global-service",
+      "mappedBy": "doctor"
+    },
+    "prices": {
+      "displayName": "ServicePrice",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.service-price"
+    },
+    "education": {
+      "displayName": "Education",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.education"
+    },
+    "clinics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::clinic.clinic"
+    },
+    "fullName": {
+      "type": "string",
+      "required": true,
+      "regex": "^[а-я\\-\\s]+$"
+    }
+  }
+}

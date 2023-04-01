@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ui_addresses",
+  "info": {
+    "displayName": "Address"
+  },
+  "options": {},
+  "attributes": {
+    "cities": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::city.city"
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

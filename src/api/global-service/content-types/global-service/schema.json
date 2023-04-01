@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "global_services",
+  "info": {
+    "singularName": "global-service",
+    "pluralName": "global-services",
+    "displayName": "GlobalServices",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "online",
+        "home",
+        "child",
+        "receipt",
+        "forms"
+      ]
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::doctor.doctor",
+      "inversedBy": "globalServices"
+    }
+  }
+}

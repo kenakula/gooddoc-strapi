@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ui_service_prices",
+  "info": {
+    "displayName": "ServicePrice"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "currency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    },
+    "priceFrom": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

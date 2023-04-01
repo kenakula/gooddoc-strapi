@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ui_links",
+  "info": {
+    "displayName": "Link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "isAccent": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

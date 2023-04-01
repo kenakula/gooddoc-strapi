@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "doctors_pages",
+  "info": {
+    "singularName": "doctors-page",
+    "pluralName": "doctors-pages",
+    "displayName": "DoctorsPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "promo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.promo"
+    }
+  }
+}
