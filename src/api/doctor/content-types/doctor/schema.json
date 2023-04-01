@@ -49,18 +49,16 @@
     "insurances": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::insurance.insurance",
-      "mappedBy": "doctor"
+      "target": "api::insurance.insurance"
     },
     "reembolso": {
       "type": "boolean",
       "default": false
     },
-    "globalServices": {
+    "global_services": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::global-service.global-service",
-      "mappedBy": "doctor"
+      "target": "api::global-service.global-service"
     },
     "prices": {
       "displayName": "ServicePrice",
