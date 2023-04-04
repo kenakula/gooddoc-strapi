@@ -7,5 +7,5 @@ export default ({ env }) => ({
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
-  url: "http://api.lookfordocs.com",
+  url: "https://api.lookfordocs.com",
 });
