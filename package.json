@@ -16,6 +16,7 @@
     "@strapi/strapi": "4.9.0",
     "better-sqlite3": "8.0.1",
     "pg": "^8.10.0",
+    "strapi-plugin-duplicate-button": "^1.1.7",
     "strapi-plugin-transformer": "^3.0.1"
   },
   "author": {

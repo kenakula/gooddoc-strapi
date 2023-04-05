@@ -8,6 +8,7 @@ const pluginsConfig = () => ({
       },
     },
   },
+  'duplicate-button': true
 });
 
 export default pluginsConfig;

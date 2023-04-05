@@ -1947,7 +1947,7 @@
     "@strapi/utils" "4.9.0"
     "fs-extra" "10.0.0"
 
-"@strapi/strapi@^4.0.7", "@strapi/strapi@^4.3.4", "@strapi/strapi@^4.4.0", "@strapi/strapi@4.9.0":
+"@strapi/strapi@^4.0.0", "@strapi/strapi@^4.0.7", "@strapi/strapi@^4.3.4", "@strapi/strapi@^4.4.0", "@strapi/strapi@4.9.0":
   "integrity" "sha512-Aei28ALvdEzeeagL9EmIZjVR3Gyr1Xa4r82vXt0hyfdeKq8cDgUxiuMNkeWzQij8aZJub+Qq7PK0g1AZT66yGg=="
   "resolved" "https://registry.npmjs.org/@strapi/strapi/-/strapi-4.9.0.tgz"
   "version" "4.9.0"
@@ -8632,6 +8632,11 @@
   "integrity" "sha512-uUZI65yrV2Qva5gqE0+A7uVAvO40iPo6jGhs7s8keRfHCmtg+uB2X6EiLGCI9IgL1J17xGhvoOqSz79lzICPTA=="
   "resolved" "https://registry.npmjs.org/std-env/-/std-env-3.3.2.tgz"
   "version" "3.3.2"
+
+"strapi-plugin-duplicate-button@^1.1.7":
+  "integrity" "sha512-TnDzMovoBXkmJ/rpPTt1QXWLslHZenXAipoePouveSGg50pl4/azCkcSJ0Z2vSXcWpXC0OxJyC3LmlRWbwrdLQ=="
+  "resolved" "https://registry.npmjs.org/strapi-plugin-duplicate-button/-/strapi-plugin-duplicate-button-1.1.7.tgz"
+  "version" "1.1.7"
 
 "strapi-plugin-transformer@^3.0.1":
   "integrity" "sha512-jQrs+/d//3CzYyP7c09MmTlh0Ch7ejcFCo/iDY6WeLCTBlwksg6/GPXnE9QuTHNlQwPvx6YKdW8l1g2IlPH2cA=="
