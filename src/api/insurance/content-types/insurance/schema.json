@@ -23,6 +23,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "insurance"
     }
   }
 }
