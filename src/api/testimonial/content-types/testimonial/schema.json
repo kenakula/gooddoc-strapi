@@ -4,7 +4,8 @@
   "info": {
     "singularName": "testimonial",
     "pluralName": "testimonials",
-    "displayName": "Testimonials"
+    "displayName": "Testimonials",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -45,18 +46,21 @@
     },
     "doctor": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::doctor.doctor"
+      "relation": "manyToOne",
+      "target": "api::doctor.doctor",
+      "inversedBy": "testimonials"
     },
     "clinic": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::clinic.clinic"
+      "relation": "manyToOne",
+      "target": "api::clinic.clinic",
+      "inversedBy": "testimonials"
     },
     "insurance": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::insurance.insurance"
+      "relation": "manyToOne",
+      "target": "api::insurance.insurance",
+      "inversedBy": "testimonials"
     }
   }
 }

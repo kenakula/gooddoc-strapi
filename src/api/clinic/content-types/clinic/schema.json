@@ -93,6 +93,12 @@
     },
     "longText": {
       "type": "richtext"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "clinic"
     }
   }
 }

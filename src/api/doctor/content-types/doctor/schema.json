@@ -81,6 +81,12 @@
       "type": "string",
       "required": true,
       "regex": "^[а-я\\-\\s]+$"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "doctor"
     }
   }
 }
