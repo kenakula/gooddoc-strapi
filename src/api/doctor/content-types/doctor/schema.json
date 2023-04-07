@@ -55,7 +55,7 @@
       "type": "boolean",
       "default": false
     },
-    "global_services": {
+    "globalServices": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::global-service.global-service"
