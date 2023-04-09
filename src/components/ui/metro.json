@@ -10,10 +10,6 @@
       "type": "string",
       "required": true
     },
-    "slug": {
-      "type": "string",
-      "required": true
-    },
     "color": {
       "type": "relation",
       "relation": "oneToOne",
