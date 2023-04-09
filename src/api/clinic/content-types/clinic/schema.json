@@ -86,7 +86,7 @@
       "relation": "oneToMany",
       "target": "api::global-service.global-service"
     },
-    "services": {
+    "prices": {
       "type": "component",
       "repeatable": true,
       "component": "ui.service-price"
