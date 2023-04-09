@@ -4,7 +4,8 @@
   "info": {
     "singularName": "request",
     "pluralName": "requests",
-    "displayName": "requests"
+    "displayName": "requests",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -55,6 +56,10 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::doctor.doctor"
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
     }
   }
 }
