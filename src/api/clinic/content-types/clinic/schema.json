@@ -67,11 +67,6 @@
       "relation": "oneToMany",
       "target": "api::specialty.specialty"
     },
-    "doctors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::doctor.doctor"
-    },
     "reembolso": {
       "type": "boolean",
       "default": false
@@ -99,6 +94,12 @@
       "relation": "oneToMany",
       "target": "api::testimonial.testimonial",
       "mappedBy": "clinic"
+    },
+    "doctors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::doctor.doctor",
+      "inversedBy": "clinics"
     }
   }
 }

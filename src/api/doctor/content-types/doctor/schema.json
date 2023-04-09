@@ -74,8 +74,9 @@
     },
     "clinics": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::clinic.clinic"
+      "relation": "manyToMany",
+      "target": "api::clinic.clinic",
+      "inversedBy": "doctors"
     },
     "fullName": {
       "type": "string",
