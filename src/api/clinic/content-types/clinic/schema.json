@@ -99,7 +99,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::doctor.doctor",
-      "inversedBy": "clinics"
+      "mappedBy": "clinics"
     }
   }
 }

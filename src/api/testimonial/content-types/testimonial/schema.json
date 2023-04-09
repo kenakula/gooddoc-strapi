@@ -61,6 +61,12 @@
       "relation": "manyToOne",
       "target": "api::insurance.insurance",
       "inversedBy": "testimonials"
+    },
+    "reviewed": {
+      "type": "boolean",
+      "default": false,
+      "required": false,
+      "private": true
     }
   }
 }
