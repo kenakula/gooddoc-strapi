@@ -86,9 +86,6 @@
       "repeatable": true,
       "component": "ui.service-price"
     },
-    "longText": {
-      "type": "richtext"
-    },
     "testimonials": {
       "type": "relation",
       "relation": "oneToMany",
@@ -100,6 +97,14 @@
       "relation": "manyToMany",
       "target": "api::doctor.doctor",
       "mappedBy": "clinics"
+    },
+    "longText": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

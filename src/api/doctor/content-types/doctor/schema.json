@@ -31,9 +31,6 @@
     "shortText": {
       "type": "text"
     },
-    "longText": {
-      "type": "richtext"
-    },
     "specialties": {
       "type": "relation",
       "relation": "manyToMany",
@@ -88,6 +85,14 @@
       "relation": "oneToMany",
       "target": "api::testimonial.testimonial",
       "mappedBy": "doctor"
+    },
+    "longText": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

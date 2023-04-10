@@ -33,9 +33,6 @@
       "type": "text",
       "required": true
     },
-    "content": {
-      "type": "richtext"
-    },
     "socialImage": {
       "type": "media",
       "multiple": false,
@@ -43,6 +40,14 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
