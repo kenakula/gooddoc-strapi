@@ -6,10 +6,10 @@ import { IEmailData } from '../../../shared/types';
 export default factories.createCoreController('api::request.request', ({ strapi }) => ({
   async create(ctx) {
     const { data: { id, attributes } }: ResponseModel<RequestModel> = await super.create(ctx);
-    const requestURL = `https://api.lookfordocs.com/admin/content-manager/collectionType/api::testimonial.testimonial/${id}`;
+    const requestURL = `https://api.lookfordocs.com/admin/content-manager/collectionType/api::request.request/${id}`;
     const requestTitle = attributes.type === 'clinic' ? 'Заявка на запись в клинику' : attributes.type === 'doctor' ? 'Заявка на запись к врачу' : 'Заявка на запись';
     const requestConnectType = attributes.connectionType === 'phone' ? 'по телефону' : attributes.connectionType === 'telegram' ? 'в телеграм' : 'в вотсапп';
-    const requestDate = new Date(attributes.date).toLocaleDateString();
+    const requestDate = new Date(attributes.date).toLocaleDateString('ru-RU');
 
     const emailData: IEmailData<RequestModel> = {
       options: {
