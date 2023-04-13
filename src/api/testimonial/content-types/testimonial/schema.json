@@ -64,6 +64,9 @@
     },
     "email": {
       "type": "email"
+    },
+    "entityName": {
+      "type": "string"
     }
   }
 }

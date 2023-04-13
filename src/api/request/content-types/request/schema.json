@@ -60,6 +60,9 @@
     "date": {
       "type": "datetime",
       "required": true
+    },
+    "entityName": {
+      "type": "string"
     }
   }
 }

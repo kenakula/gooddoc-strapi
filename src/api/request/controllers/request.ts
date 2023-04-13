@@ -30,17 +30,17 @@ export default factories.createCoreController(
         options: {
           subject: `${requestTitle}`,
           html: `
-        <h1>${requestTitle} <b>${targetName}</b> от пользователя ${attributes.name}</h1>
-        <p>Пользователь ${attributes.name} отправил заявку на запись</p>
-        <p>Предпочитаемый способ связи: <b>${requestConnectType}</b></p>
-        <p>Почта пользователя: ${attributes.email}</p>
-        <p>Телефон пользователя: <a href="tel:${attributes.phone}">${attributes.phone}</a></p>
-        <h2>Текст Заявки</h2>
-        <p>${attributes.comment}</p>
-        <b>Дата заявки: ${requestDate}</b>
-        <p>Ссылка на заявку: <a href='${requestURL}'>Ссылка на заявку</a></p>
-        <p>После обработки заявки переведите статью в состояние Published</p>
-      `,
+            <h1>${requestTitle} <b>${targetName}</b> от пользователя ${attributes.name}</h1>
+            <p>Пользователь ${attributes.name} отправил заявку на запись</p>
+            <p>Предпочитаемый способ связи: <b>${requestConnectType}</b></p>
+            <p>Почта пользователя: ${attributes.email}</p>
+            <p>Телефон пользователя: <a href="tel:${attributes.phone}">${attributes.phone}</a></p>
+            <h2>Текст Заявки</h2>
+            <p>${attributes.comment}</p>
+            <b>Дата заявки: ${requestDate}</b>
+            <p>Ссылка на заявку: <a href='${requestURL}'>Ссылка на заявку</a></p>
+            <p>После обработки заявки переведите статью в состояние Published</p>
+          `,
           from: "lookfordocs@strapi.com",
           to: "lookfordooc@gmail.com",
         },

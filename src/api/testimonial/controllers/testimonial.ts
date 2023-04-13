@@ -20,16 +20,16 @@ export default factories.createCoreController(
         options: {
           subject: `${testimonialTitle}`,
           html: `
-        <h1>${testimonialTitle} от пользователя ${attributes.author}</h1>
-        <p>Пользователь ${attributes.author} отправил ${testimonialTitle} <b>${attributes.entityName}</b>.</p>
-        <p>Рейтинг: <b>${attributes.rate} из 5</b></p>
-        <h2>Текст отзыва</h2>
-        <p>Почта пользователя: ${attributes.email}</p>
-        <p>${attributes.comment}</p>
-        <b>${testimonialDate}</b>
-        <p>Ссылка на отзыв: <a href='${testimonialURL}'>Ссылка на отзыв</a></p>
-        <p>Чтобы отзыв появился на сайте, необходимо его опубликовать в админке</p>
-      `,
+            <h1>${testimonialTitle} от пользователя ${attributes.author}</h1>
+            <p>Пользователь ${attributes.author} отправил ${testimonialTitle} <b>${attributes.entityName}</b>.</p>
+            <p>Рейтинг: <b>${attributes.rate} из 5</b></p>
+            <h2>Текст отзыва</h2>
+            <p>Почта пользователя: ${attributes.email}</p>
+            <p>${attributes.comment}</p>
+            <b>${testimonialDate}</b>
+            <p>Ссылка на отзыв: <a href='${testimonialURL}'>Ссылка на отзыв</a></p>
+            <p>Чтобы отзыв появился на сайте, необходимо его опубликовать в админке</p>
+          `,
           from: "lookfordocs@strapi.com",
           to: "lookfordooc@gmail.com",
         },
