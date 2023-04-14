@@ -95,7 +95,7 @@
       "customField": "plugin::ckeditor.CKEditor"
     },
     "rnovaId": {
-      "type": "integer"
+      "type": "string"
     }
   }
 }

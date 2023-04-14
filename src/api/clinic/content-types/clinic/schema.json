@@ -105,6 +105,9 @@
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "rnovaId": {
+      "type": "string"
     }
   }
 }
