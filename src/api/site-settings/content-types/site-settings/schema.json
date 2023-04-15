@@ -4,7 +4,7 @@
   "info": {
     "singularName": "site-settings",
     "pluralName": "site-settings-single",
-    "displayName": "siteSettings",
+    "displayName": "SiteSettings",
     "description": ""
   },
   "options": {
@@ -62,6 +62,12 @@
       "type": "component",
       "repeatable": true,
       "component": "ui.link"
+    },
+    "favicons": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.favicons",
+      "required": true
     }
   }
 }
