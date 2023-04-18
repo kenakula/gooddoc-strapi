@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_requests",
+  "info": {
+    "singularName": "partner-request",
+    "pluralName": "partner-requests",
+    "displayName": "PartnerRequest"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "specialty": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "doctor",
+        "clinic"
+      ]
+    }
+  }
+}
