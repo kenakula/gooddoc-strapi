@@ -2,6 +2,7 @@ import { factories } from "@strapi/strapi";
 import { ResponseModel } from "../../../shared/models";
 import { RequestModel } from "../../../shared/models/request.model";
 import { IEmailData } from "../../../shared/types";
+import { getTimeString } from "../../../shared/assets";
 
 export default factories.createCoreController(
   "api::request.request",
@@ -24,9 +25,9 @@ export default factories.createCoreController(
           ? "в телеграм"
           : "в вотсапп";
       const appointmentTime = attributes.slot
-        ? `<p>Время записи ${attributes.slot.start} - rnova</p>`
+        ? `<p>Время записи <b>${getTimeString(new Date(attributes.slot))}</b> - rnova</p>`
         : "";
-      const requestDate = new Date(attributes.date).toLocaleDateString("ru-RU");
+      const requestDate = getTimeString(new Date(attributes.date));
       const targetName = attributes.entityName ?? "";
 
       const emailData: IEmailData<RequestModel> = {
@@ -34,6 +35,7 @@ export default factories.createCoreController(
           subject: `${requestTitle}`,
           html: `
             <h1>${requestTitle} <b>${targetName}</b> от пользователя ${attributes.name}</h1>
+            ${attributes.isTelemed ? '<h2>Онлайн консультация</h2>' : ''}
             <p>Пользователь ${attributes.name} отправил заявку на запись</p>
             ${appointmentTime}
             <p>Предпочитаемый способ связи: <b>${requestConnectType}</b></p>

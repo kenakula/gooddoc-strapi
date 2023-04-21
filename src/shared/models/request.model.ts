@@ -15,5 +15,5 @@ export interface RequestModel {
   entityName?: string;
   date: Date;
   isTelemed: boolean;
-  slot?: SelectedSlot;
+  slot?: Date;
 }
