@@ -4,6 +4,10 @@ import { RequestModel } from "../../../shared/models/request.model";
 import { IEmailData } from "../../../shared/types";
 import { getTimeString } from "../../../shared/assets";
 
+// TODO сделать шаблоны писем
+// 1 - нам для заявки администратору
+// 2 - пользователю когда записался с инфой о записи
+
 export default factories.createCoreController(
   "api::request.request",
   ({ strapi }) => ({
@@ -47,7 +51,7 @@ export default factories.createCoreController(
             <p>Ссылка на заявку: <a href='${requestURL}'>Ссылка на заявку</a></p>
             <p>После обработки заявки переведите статью в состояние Published</p>
           `,
-          from: "lookfordocs@strapi.com",
+          from: "lookfordooc@gmail.com",
           to: "lookfordooc@gmail.com",
         },
         data: attributes,
