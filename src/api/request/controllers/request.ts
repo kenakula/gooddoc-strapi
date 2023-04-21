@@ -23,6 +23,9 @@ export default factories.createCoreController(
           : attributes.connectionType === "telegram"
           ? "в телеграм"
           : "в вотсапп";
+      const appointmentTime = attributes.slot
+        ? `<p>Время записи ${attributes.slot.start} - rnova</p>`
+        : "";
       const requestDate = new Date(attributes.date).toLocaleDateString("ru-RU");
       const targetName = attributes.entityName ?? "";
 
@@ -32,6 +35,7 @@ export default factories.createCoreController(
           html: `
             <h1>${requestTitle} <b>${targetName}</b> от пользователя ${attributes.name}</h1>
             <p>Пользователь ${attributes.name} отправил заявку на запись</p>
+            ${appointmentTime}
             <p>Предпочитаемый способ связи: <b>${requestConnectType}</b></p>
             <p>Почта пользователя: ${attributes.email}</p>
             <p>Телефон пользователя: <a href="tel:${attributes.phone}">${attributes.phone}</a></p>

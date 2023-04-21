@@ -1,3 +1,8 @@
+export interface SelectedSlot {
+  start: Date;
+  end: Date;
+}
+
 export interface RequestModel {
   name: string;
   email: string;
@@ -9,4 +14,5 @@ export interface RequestModel {
   doctor?: number[];
   entityName?: string;
   date: Date;
+  slot?: SelectedSlot;
 }
