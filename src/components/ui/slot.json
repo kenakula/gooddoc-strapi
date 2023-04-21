@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_ui_slots",
+  "info": {
+    "displayName": "Slot"
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    }
+  }
+}

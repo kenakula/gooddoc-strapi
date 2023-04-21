@@ -63,6 +63,16 @@
     },
     "entityName": {
       "type": "string"
+    },
+    "slot": {
+      "type": "component",
+      "repeatable": false,
+      "component": "ui.slot"
+    },
+    "isTelemed": {
+      "type": "boolean",
+      "default": false,
+      "required": false
     }
   }
 }
