@@ -5,7 +5,7 @@ export const testimonialTemplate = (
   { entityName, author, type, rate, email, comment }: TestimonialModel,
   dataId: number,
 ): string => {
-  const linkToTestimonial = `http://localhost:8082/admin/content-manager/collectionType/api::testimonial.testimonial/${dataId}`;
+  const linkToTestimonial = `https://api.lookfordocs.com/admin/content-manager/collectionType/api::testimonial.testimonial/${dataId}`;
   const targetString =
     type === 'clinic' ? 'Отзыв на клинику' : 'Отзыв на врача';
 
