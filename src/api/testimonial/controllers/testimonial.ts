@@ -6,13 +6,13 @@ export default factories.createCoreController(
   ({ strapi }) => ({
     async create(ctx) {
       const {
-        data: { attributes },
+        data: { attributes, id },
       }: ResponseModel<TestimonialModel> = await super.create(ctx);
 
       try {
         await strapi
           .service('api::testimonial.testimonial')
-          .sendEmail(attributes);
+          .sendEmail(attributes, id);
       } catch (err) {
         console.log('error email sending', err);
       }

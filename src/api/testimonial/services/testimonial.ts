@@ -7,10 +7,10 @@ import { testimonialTemplate } from '../../../shared/email-templates/testimonial
 export default factories.createCoreService(
   'api::testimonial.testimonial',
   () => ({
-    async sendEmail(data: TestimonialModel) {
+    async sendEmail(data: TestimonialModel, dataId: number) {
       const options: Mail.Options = {
         subject: `Отзыв LookForDocs`,
-        html: testimonialTemplate(data),
+        html: testimonialTemplate(data, dataId),
         from: 'lookfordooc@gmail.com',
         to: 'lookfordooc@gmail.com',
       };

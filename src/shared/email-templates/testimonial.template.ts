@@ -1,14 +1,11 @@
 import { capitalizeName } from '../assets';
 import { TestimonialModel } from '../models';
 
-export const testimonialTemplate = ({
-  entityName,
-  author,
-  type,
-  rate,
-  email,
-  comment,
-}: TestimonialModel): string => {
+export const testimonialTemplate = (
+  { entityName, author, type, rate, email, comment }: TestimonialModel,
+  dataId: number,
+): string => {
+  const linkToTestimonial = `http://localhost:8082/admin/content-manager/collectionType/api::testimonial.testimonial/${dataId}`;
   const targetString =
     type === 'clinic' ? 'Отзыв на клинику' : 'Отзыв на врача';
 
@@ -42,6 +39,9 @@ export const testimonialTemplate = ({
         </table>
         <h2 style="font-size: 28px;">Комментарий</h2>
         <p>${comment}</p>
+
+        <h3><a target="_blank" href="${linkToTestimonial}">Ссылка<a> на отзыв в CMS</h3>
+        <span>Опубликуйте статью с отзывом чтобы она появилась на сайте</span>
       </div>
     </body>
 
