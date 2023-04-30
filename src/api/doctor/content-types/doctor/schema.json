@@ -96,6 +96,12 @@
     },
     "rnovaId": {
       "type": "string"
+    },
+    "officeAppointmentsId": {
+      "type": "string"
+    },
+    "homeAppointmentsId": {
+      "type": "string"
     }
   }
 }

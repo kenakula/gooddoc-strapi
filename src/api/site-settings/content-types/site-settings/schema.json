@@ -68,6 +68,10 @@
       "repeatable": false,
       "component": "blocks.favicons",
       "required": true
+    },
+    "siteName": {
+      "type": "string",
+      "required": true
     }
   }
 }
