@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_insurances",
+  "info": {
+    "displayName": "Insurances"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

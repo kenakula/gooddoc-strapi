@@ -4,7 +4,8 @@
   "info": {
     "singularName": "main-page",
     "pluralName": "main-pages",
-    "displayName": "MainPage"
+    "displayName": "MainPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -35,6 +36,11 @@
       "repeatable": true,
       "component": "blocks.advantages",
       "required": true
+    },
+    "insurances": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.insurances"
     }
   }
 }
