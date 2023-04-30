@@ -37,7 +37,27 @@
       "component": "blocks.advantages",
       "required": true
     },
-    "insurances": {
+    "insurancesBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.insurances"
+    },
+    "popularBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.insurances"
+    },
+    "servicesBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.insurances"
+    },
+    "advantagesBlock": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.insurances"
+    },
+    "testimonialsBlock": {
       "type": "component",
       "repeatable": false,
       "component": "blocks.insurances"

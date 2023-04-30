@@ -1,17 +1,18 @@
 {
   "collectionName": "components_blocks_insurances",
   "info": {
-    "displayName": "Insurances"
+    "displayName": "PageBlock",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "subtitle": {
-      "type": "string",
-      "required": true
+      "type": "text",
+      "required": false
     }
   }
 }
