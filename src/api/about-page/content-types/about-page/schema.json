@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "content": {
-      "type": "richtext",
-      "required": true
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -31,6 +27,15 @@
     "buttonText": {
       "type": "string",
       "required": true
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
