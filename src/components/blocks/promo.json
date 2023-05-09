@@ -29,6 +29,15 @@
       "type": "component",
       "repeatable": true,
       "component": "ui.chip"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "appointment",
+        "contact"
+      ],
+      "required": true,
+      "default": "appointment"
     }
   }
 }

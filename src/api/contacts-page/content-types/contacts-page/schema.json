@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts_pages",
+  "info": {
+    "singularName": "contacts-page",
+    "pluralName": "contacts-pages",
+    "displayName": "ContactsPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "promo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.promo"
+    },
+    "aboutTitle": {
+      "type": "string",
+      "required": true
+    },
+    "aboutContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "aboutButtonText": {
+      "type": "string",
+      "required": true
+    },
+    "aboutButtonLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -4,3 +4,4 @@ export * from './simple-request.template';
 export * from './clinic-partner.template';
 export * from './doctor-partner.template';
 export * from './user-request.template';
+export * from './feedback.template';

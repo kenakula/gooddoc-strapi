@@ -75,6 +75,10 @@
     },
     "email": {
       "type": "email"
+    },
+    "telegram": {
+      "type": "string",
+      "required": false
     }
   }
 }
