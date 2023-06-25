@@ -12,9 +12,9 @@
   "dependencies": {
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-color-picker": "^4.9.0",
-    "@strapi/plugin-i18n": "4.9.1",
-    "@strapi/plugin-users-permissions": "4.9.1",
-    "@strapi/strapi": "4.9.1",
+    "@strapi/plugin-i18n": "4.11.2",
+    "@strapi/plugin-users-permissions": "4.11.2",
+    "@strapi/strapi": "4.11.2",
     "@types/nodemailer": "^6.4.7",
     "better-sqlite3": "8.0.1",
     "nodemailer": "^6.9.1",
